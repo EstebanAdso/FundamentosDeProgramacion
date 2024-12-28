@@ -1577,27 +1577,6 @@ code {
     max-width: 1400px;
 }
 
-@media (max-width: 768px) {
-    .functional-programming-section {
-        grid-template-columns: 1fr;
-        box-sizing: border-box;
-        width: 100%;
-        margin: 20px auto;
-        padding: 20px;
-        gap: 0px;
-    }
-
-    .functional-item {
-        background-color: #0a0a0a;
-        border-radius: 8px;
-        padding: 0px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        width: 100%;
-    }
-    
-}
-
 .functional-item {
     background-color: #0a0a0a;
     border-radius: 8px;
@@ -1635,7 +1614,25 @@ code {
     color: #e60000;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    .functional-programming-section {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        width: 90%; /* Más ancho en móviles */
+    }
 
+    .item-title {
+        font-size: 1.4em; /* Ajustar tamaño de fuente */
+    }
+
+    .item-content {
+        font-size: 1em; /* Reducir el tamaño de texto */
+    }
+
+    pre {
+        font-size: 0.9em; /* Reducir el tamaño del código */
+        padding: 10px;
+    }
+}
 
 
 .contact-section{
@@ -2038,7 +2035,7 @@ code {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Twitch Section */
+
 .lenguaje-programacion {
     position: relative; 
     width: 100%;
@@ -2145,6 +2142,67 @@ code {
 }
 
 
+
+.poo-section {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+    width: 100%;
+    margin: auto;
+}
+
+.poo-conceptos{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.poo-titulo {
+    color: #1c1d1c;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.poo-descripcion {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #000;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.poo-lista {
+    list-style: disc inside;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.poo-codigo {
+    background-color: #eef5ee;
+    border-left: 4px solid #4CAF50;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+    color: #000;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.poo-lista{
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.poo-ventajas{
+    max-width: 1400px;
+    margin: auto;
+}
+
 @media (max-width: 768px) {
     .secciones-programability,
     .tipos-lenguaje,
@@ -2163,10 +2221,12 @@ code {
 
 
 
-.footer {
+footer {
     color: white;
     text-align: center;
-    padding-bottom: 50px;
+    padding: 50px 0;
+    margin: auto;
+
 }
 
 
